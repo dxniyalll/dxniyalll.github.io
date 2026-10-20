@@ -8,28 +8,33 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 40px 20px;
+            box-sizing: border-box;
             background-color: #ffffff;
             color: #000000;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         img {
-            max-width: 300px;
-            border-radius: 12px; 
-            margin-bottom: 24px;
+            width: 85%; /* Scales naturally to leave comfortable "wide" borders on mobile */
+            max-width: 440px; /* Limits the max size so it stays about the size of a phone screen on desktop */
+            height: auto;
+            border-radius: 16px; /* Slightly smoother rounded corners for the larger size */
+            margin-bottom: 28px;
         }
         h1 {
             font-weight: 300; 
             text-transform: uppercase; 
-            letter-spacing: 2px;
+            letter-spacing: 3px; /* Slightly increased letter-spacing for premium minimalism */
             margin: 0;
-            font-size: 24px;
+            font-size: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <img src="hhhfgcb.jpeg" alt="Photo">
-    <h1>JIM FRICKE</h1>
+    <img src="hhhfgcb.jpeg" alt="Photo of Jim Fricke">
+    <h1>Jim Fricke</h1>
 </body>
 </html>
