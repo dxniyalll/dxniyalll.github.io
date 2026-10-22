@@ -5,35 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
             margin: 0;
-            background-color: #ffffff;
-            color: #000000;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: #000000;
+            overflow: hidden; 
         }
         img {
-            width: 80%;
-            max-width: 500px;
-            height: auto;
-            border-radius: 16px;
-            margin-bottom: 24px;
-        }
-        h1 {
-            font-weight: 300; 
-            text-transform: uppercase; 
-            letter-spacing: 3px;
-            margin: 0;
-            font-size: 22px;
-            text-align: center;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block; 
         }
     </style>
 </head>
 <body>
-    <img src="hhhfgcb.jpeg" alt="Photo">
-    <h1>Jim Fricke</h1>
+    <img src="your-photo.jpg" alt="Photo">
 </body>
 </html>
+
+```
