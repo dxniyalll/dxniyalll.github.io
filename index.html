@@ -7,16 +7,28 @@
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
-            width: 100vw;
-            background-color: #000000;
-            overflow: hidden; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #ffffff;
         }
+        
+        /* Mobile: Full screen, cropped to fit */
         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-            display: block; 
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* PC: Scaled down, no rounded corners */
+        @media (min-width: 768px) {
+            img {
+                width: 90%;
+                max-width: 500px;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -24,5 +36,3 @@
     <img src="hhhfgcb.jpeg" alt="Photo">
 </body>
 </html>
-
-```
